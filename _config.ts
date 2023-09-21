@@ -5,7 +5,9 @@ import a11yEmoji from 'npm:@fec/remark-a11y-emoji';
 import rehypeRemoveComments from 'npm:rehype-remove-comments@5';
 import rehypeHighlight from 'https://esm.sh/rehype-highlight@7.0.0';
 
-const site = lume();
+const site = lume({
+    prettyUrls: false
+});
 
 site.use(jsx());
 site.use(mdx({
