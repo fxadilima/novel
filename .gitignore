@@ -7,7 +7,7 @@
 tests/
 
 # builddir
-_site/
+# _site/
 
 # dependencies
 node_modules/
