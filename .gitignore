@@ -5,9 +5,6 @@
 # local tests
 tests/
 
-# generated types
-_site/
-
 # dependencies
 node_modules/
 
