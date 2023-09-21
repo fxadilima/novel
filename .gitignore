@@ -5,8 +5,6 @@
 # local tests
 tests/
 
-_site/
-
 # dependencies
 node_modules/
 
