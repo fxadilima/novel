@@ -16,6 +16,14 @@ site.use(mdx({
     ],
 }));
 
+site.ignore((path) => {
+    if (path.startsWith("/tests")) {
+        console.log("Ignoring " + path);
+        return true;
+    }
+    return false;
+});
+
 site.copy('book.svg');
 site.copy('public/images', 'images');
 site.copy('public/styles', 'styles');
