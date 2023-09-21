@@ -24,7 +24,7 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "fresh-rat-64"
-          entrypoint: "./server.ts"
+          project: "sdyxz"
+          entrypoint: "server.ts"
           root: "."
           
