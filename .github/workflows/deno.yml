@@ -19,4 +19,4 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "fresh-rat-64"
-          entrypoint: "./serve.ts" 
+          entrypoint: "./server.ts" 
