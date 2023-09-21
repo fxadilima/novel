@@ -1,14 +1,17 @@
-# Bab 1
+---
+title: Memanah Rajawali, Bab 1
+next: bab2
+relatedBooks:
+    - title: Informations
+      link: /README.html
+    - title: Bab 3
+      link: bab3
+---
 
-| :house: | Bab Lain | Bab 2 |
-|  :---:  |  :---:   | :---: |
-| [:arrow_backward: Prolog](intro.md) | [:three:](bab3.md) [:four:](bab4.md) [:five:](bab5.md) [:six:](bab6.md) [:seven:](bab7.md) | [Next :arrow_forward:](bab2.md) |
+## &#128278;  Insiden Ditengah Badai Salju
 
-## Insiden Ditengah Badai Salju
-
-Di masa itu, di dekat kota Lin'an, sebelah Timur wilayah Jin, dua orang pemuda
-yang bersahabat karib sedang minum arak sambil menikmati cerita rakyat di sebuah
-kedai, di pinggiran kota.
+Di masa itu, di dekat kota Lin'an, sebelah Timur wilayah Jin, dua orang sahabat 
+sedang minum arak sambil menikmati cerita rakyat di sebuah kedai, di pinggiran kota.
 
 Pemuda pertama bertubuh tinggi dan sangat kekar seperti seorang militer, 
 matanya lebar dengan sepasang alis tebal, ia bernama Guo Xiaotian. 

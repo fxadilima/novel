@@ -1,10 +1,16 @@
-# Bab 2
+---
+layout: layouts/sdyxz.njk
+title: Memanah Rajawali - Bab 2
+prev: bab1
+next: bab3
+relatedBooks:
+  - title: Informasi
+    link: /README.html
+  - title: Menjelajah Dunia
+    link: /content/memenjelajah-dunia/
+---
 
-| Bab 1 | Prolog | Bab Lainnya | Bab 3 |
-| :---: |  :---: | :---:   | :---: |
-| [:arrow_backward: Prev](bab1.md) | [:house:](intro.md) | [:four:](bab4.md) [:five:](bab5.md) [:six:](bab6.md) | [Next :arrow_forward:](bab3.md) |
-
-## Tujuh Orang Aneh Dari Jiangnan
+## &#128278; Tujuh Orang Aneh Dari Jiangnan
 
 Pada saat Yan Lie berjalan keluar, ia berpapasan dengan seorang pelajar setengah
 baya yang sedang berjalan masuk, menyeret kakinya sambil terus menguap. Ia seperti
@@ -209,7 +215,7 @@ dengan para prajurit Song itu?"
 Bao Xiruo lebih terkejut lagi, "Mereka _bukan_ prajurit Song?"
 
 Yan Lie tersenyum, "Kupikir sekarang aku harus lebih jujur. Mereka semuanya prajurit
-elit Dinasti Jin." Ia idak bisa menahan diri, dan tertawa penuh kebanggaan.
+elit Dinasti Jin." Ia tidak bisa menahan diri, dan tertawa penuh kebanggaan.
 
 Bao Xiruo tiba-tiba sadar, "Kalau begitu... kau... kau adalah..."
 

@@ -1,7 +1,14 @@
 ---
-layout: layouts/main.jsx
+layout: layouts/sdyxz.njk
 title: About Memanah Rajawali
 description: Intro untuk buku Memanah Rajawali
+relatedBooks:
+  - title: Bab 1
+    link: /content/memanah-rajawali/bab1.html
+  - title: Bab 2
+    link: /content/memanah-rajawali/bab2.html
+  - title: Bab 3
+    link: /content/memanah-rajawali/bab3.html
 ---
 
 
