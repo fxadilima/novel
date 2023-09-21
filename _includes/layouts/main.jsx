@@ -19,5 +19,3 @@ export default ({ title, description, children }) => (
         </body>
     </html>
 );
-
-//<link rel="stylesheet" href="/styles/xcode.min.css"/>
