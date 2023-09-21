@@ -2,8 +2,12 @@
 .kv/
 
 .github/
+
 # local tests
 tests/
+
+# builddir
+_site/
 
 # dependencies
 node_modules/
