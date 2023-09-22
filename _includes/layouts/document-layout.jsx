@@ -1,9 +1,11 @@
-export default ({ title, description, children }) => (
+
+export default ({ title, description, children}) => (
     <html lang="en">
         <head>
             <meta charset="UTF-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <meta name="description" content={description}/>
+            <meta name="author" content="FX. Adi Lima"/>
             <link rel="icon" type="image/svg+xml" href="/book.svg"/>
             <title>{title}</title>
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
@@ -16,8 +18,8 @@ export default ({ title, description, children }) => (
                         document.getElementById('mySidebar').style.display = 'none';
                     }
                 }>Close &times;</button>
-                <div className="w3-bar-block">
-                    <a href="/content/memanah-rajawali" className="w3-bar-item w3-btn" title="Memanah Rajawali Home">&#127960; Memanah Rajawali - Home</a>
+                <div className="w3-bar">
+                    <a href="/" className="w3-bar-item" title="Back Home">&#127968;</a>
                 </div>
             </div>
 
@@ -28,10 +30,12 @@ export default ({ title, description, children }) => (
                             document.getElementById('mySidebar').style.display = 'block';
                         }
                     }>&#9776;</button>
+                    <div className="w3-bar w3-container">
+                        <h1>&#129413; {title}</h1>
+                    </div>
                 </header>
 
                 <div className="w3-container">
-                    <h1>&#129413; {title}</h1>
                     {children}
                 </div>
             </main>

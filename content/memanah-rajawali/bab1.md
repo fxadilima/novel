@@ -2,9 +2,9 @@
 title: Memanah Rajawali, Bab 1
 next: bab2
 relatedBooks:
-    - title: Informations
+    - title: '&#8505;&#65039; Informasi'
       link: /README.html
-    - title: Bab 3
+    - title: Kehidupan Di Padang Rumput
       link: bab3
 ---
 

@@ -4,13 +4,41 @@ title: Memanah Rajawali - Bab 2
 prev: bab1
 next: bab3
 relatedBooks:
-  - title: Informasi
+  - title: '&#8505;&#65039; Informasi'
     link: /README.html
-  - title: Menjelajah Dunia
-    link: /content/memenjelajah-dunia/
+  - title: '&#128214; Menjelajah Dunia'
+    link: /content/menjelajah-dunia
+cover: 
+    image: https://res.cloudinary.com/drzjshskk/image/upload/q_auto:best/v1676666031/sdyxz/originals/ch02_hrww24.jpg 
+    header: '&#128214; Bab 2'
+    footer: Tujuh Orang Aneh Dari Jiangnan
 ---
 
-## &#128278; Tujuh Orang Aneh Dari Jiangnan
+<details>
+<summary><strong>&#10024; Technical Notes</strong></summary>
+
+Simbol 🔖 sebaiknya kita gunakan untuk mewakili <mark>bookmark</mark>.
+Di permulaan judul bab sebaiknya kita gunakan simbol 📖, yaitu karakter UTF-8
+dengan nomor 128214.
+
+Sisipan bisa kita kemas menjadi teks yang jauh lebih praktis dan rapi:
+
+```markdown
+
+<details>
+<summary><strong>&#127916; Cuplikan YouTube</strong></summary>
+
+[Ilustrasi drama](https://youtube.com/clip/UgkxlO6SQZVF62GUsdm0BB3oM1dWl6dqEjqz) ketika Yan Lie
+kehilangan uangnya, tidak betul-betul tepat sama seperti urutan peristiwa dalam
+novel Jin Yong ini. Tetapi dialog dan peristiwa yang terjadi masih cukup _representatif_.
+
+</details>
+
+```
+
+</details>
+
+## &#128214; Tujuh Orang Aneh Dari Jiangnan
 
 Pada saat Yan Lie berjalan keluar, ia berpapasan dengan seorang pelajar setengah
 baya yang sedang berjalan masuk, menyeret kakinya sambil terus menguap. Ia seperti
@@ -70,9 +98,14 @@ keluar kamar.
 Karena terkejut, Bao Xiruo mengusulkan, "Ayo pergi, kita tidak bisa tinggal di sini
 lagi."
 
+<details>
+<summary><strong>&#127916; Cuplikan YouTube</strong></summary>
+
 [Ilustrasi drama](https://youtube.com/clip/UgkxlO6SQZVF62GUsdm0BB3oM1dWl6dqEjqz) ketika Yan Lie
 kehilangan uangnya, tidak betul-betul tepat sama seperti urutan peristiwa dalam
 novel Jin Yong ini. Tetapi dialog dan peristiwa yang terjadi masih cukup _representatif_.
+
+</details>
 
 Yan Lie tersenyum. "Jangan kuatir. Kalau kita tidak punya uang, ya kita minta uang
 dari mereka." Ia mengambil kursi dan duduk di dekat pintu. Tak lama kemudian si pemilik
@@ -477,26 +510,26 @@ Yu Huang Da Di akan murka!" Sambil mengutip kalimat itu ia mengeluarkan beberapa
 tail emas dan perak dari sakunya, dan meletakkannya di atas meja. Semuanya terdiri
 dari delapan tail perak dan dua tail emas.
 
-<div class="w3-panel w3-card-4">
-    <h3>Catatan</h3>
-    <p>
-    Dua karakter Huangdi (皇帝) dipakai Kaisar Qin Shi Huang sebagai julukan untuk
-    dirinya sendiri, yang secara umum bisa diartikan sebagai 'Kaisar', dan sejak saat
-    itu istilah ini mulai dipakai orang. Karakter 'Di' (帝) yang dipakai di sini
-    tidak pengacu kepada sosok penguasa tertinggi di muka bumi, melainkan sosok
-    'Mahadewa' dari mitologi pantheon dalam Dinasti Shang. Sedangkan karakter Huang (皇)
-    artinya adalah 'kuning', gabungan keduanya mengacu ke sosok mitologi Tiongkok kuno
-    yang secara internasional dikenal sebagai 'Yellow Emperor'.
-    </p>
-    <p>
-    Yu Huang Da Di (玉皇大帝) adalah nama yang dipakai untuk sosok yang secara
-    internasional dikenal sebagai 'Jade Emperor'. 
-    </p>
-    <p>
-    Kutipan Si Sastrawan nyentrik di atas secara umum bertujuan untuk mengatakan bahwa sosok
-    Mahadewa dengan otoritas tertinggi atas manusia yang dipercayai masyarakat
-    pada saat itu akan murka.
-    </p>
+<div class="w3-panel w3-card-4 w3-round">
+<details>
+<summary>🔖 Istilah Yu Huang Da Di</summary>
+
+Dua karakter Huangdi (皇帝) dipakai Kaisar Qin Shi Huang sebagai julukan untuk
+dirinya sendiri, yang secara umum bisa diartikan sebagai 'Kaisar', dan sejak saat
+itu istilah ini mulai dipakai orang. Karakter 'Di' (帝) yang dipakai di sini
+tidak pengacu kepada sosok penguasa tertinggi di muka bumi, melainkan sosok
+'Mahadewa' dari mitologi pantheon dalam Dinasti Shang. Sedangkan karakter Huang (皇)
+artinya adalah 'kuning', gabungan keduanya mengacu ke sosok mitologi Tiongkok kuno
+yang secara internasional dikenal sebagai 'Yellow Emperor'.
+
+Yu Huang Da Di (玉皇大帝) adalah nama yang dipakai untuk sosok yang secara
+internasional dikenal sebagai 'Jade Emperor'. 
+
+Kutipan Si Sastrawan nyentrik di atas secara umum bertujuan untuk mengatakan bahwa sosok
+Mahadewa dengan otoritas tertinggi atas manusia yang dipercayai masyarakat
+pada saat itu akan murka.
+
+</details>
 </div>
 
 Dari bentuk dan warna uang itu Wanyan Honglie tahu bahwa semua itu miliknya, tetapi

@@ -14,43 +14,25 @@
         </style>
     </head>
     <body>
-        <div class="w3-sidebar w3-collapse w3-card" style="width:300px;" id="mySidebar">
-            <button class="w3-button w3-hide-large w3-white w3-hover-white w3-right" onclick="w3_close()">Close &times;</button>
-            <div class="w3-bar-block">
-                <a href="/" class="w3-bar-item w3-button">&#127968; Home</a>
-                {% if relatedBooks %}
-                    {% for book in relatedBooks %}
-                        <a href="{{book.link | safe}}" class="w3-btn w3-bar-item">{{book.title | safe}}</a>
-                    {% endfor %}
-                {% endif %}
-            </div>
-        </div>
+        {% include "sidebars/sdyxz-sidebar.njk" %}
         <main class="w3-main" style="margin-left:300px">
             <header>
                 <button class="w3-button w3-large w3-hide-large" onclick="w3_open()">&#9776;</button>
                 <div class="w3-bar w3-container">
                     <h1>&#129413; Memanah Rajawali</h1>
-                    <a class="w3-btn w3-round-large w3-border" href="/" title="Back Home">&#127968;</a>
-                    {% if prev %}
-                    <a class="w3-btn w3-round-large w3-border" href="/content/memanah-rajawali/{{prev}}" title="{{prev}}">&#9194; Previous</a>
-                    {% endif %}
-                    {% if next %}
-                    <a class="w3-btn w3-round-large w3-border" href="/content/memanah-rajawali/{{next}}" title="{{next}}">&#9193; Next</a>
-                    {% endif %}
+                    <a class="w3-btn w3-round-large" href="/" title="Back Home">&#127968;</a>
                 </div>
+                {% if ilustrasi %}
+                <div class="w3-panel w3-card w3-pale-blue w3-round-large" style="width:75%; margin-left:10px;">
+                    <h2>&#10080;</h2>
+                    <i>{{ilustrasi}}</i>
+                    <p></p>
+                </div>
+                {% endif %}
             </header>
             <div class="w3-container">
                 {{ content | safe }}
             </div>
         </main>
     </body>
-<script>
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
 </html>

@@ -4,10 +4,18 @@ import mdx from "lume/plugins/mdx.ts";
 import a11yEmoji from 'npm:@fec/remark-a11y-emoji';
 import rehypeRemoveComments from 'npm:rehype-remove-comments@5';
 import rehypeHighlight from 'https://esm.sh/rehype-highlight@7.0.0';
+// Page specific interfaces
+import type { Page, PageData } from "lume/core.ts";
+// Helper function specific interface
+import type { PageHelpers } from "lume/core.ts";
 
 const site = lume({
-    prettyUrls: false
+    prettyUrls: false,
+    server: {
+        port: 4000
+    }
 });
+
 
 site.use(jsx());
 site.use(mdx({

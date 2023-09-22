@@ -31,7 +31,7 @@ export default ({ title, description, children }) => (
                 </header>
 
                 <div className="w3-container">
-                    <h1>&#129413; {title}</h1>
+                    <h1>&#128481; {title}</h1>
                     {children}
                 </div>
             </main>

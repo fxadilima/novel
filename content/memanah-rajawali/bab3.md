@@ -1,32 +1,26 @@
 ---
 title: Memanah Rajawali - Bab 3
-author: FX. Adi Lima
 description: Cerita silat Memanah Burung Rajawali, Bab 3
 prev: bab2
+next: bab4
+relatedBooks:
+  - title: '&#8505;&#65039; Informasi'
+    link: /README.html
+  - title: Menjelajah Dunia
+    link: /content/menjelajah-dunia
+cover: 
+    image: https://res.cloudinary.com/drzjshskk/image/upload/e_hue:30/v1676668128/sdyxz/originals/loch-03_pk9ptl.jpg 
+    header: Bab 3
+    footer: Kehidupan Di Padang Rumput
+ilustrasi: 
+    Karena marah, Jochi mulai memukul Guo Jing dengan cambuk tunggangannya lagi,
+    menyebabkan Guo Jing berguling-guling kesakitan. Ia berguling di sebelah kaki 
+    Jochi sebelum tiba-tiba melompat dan meraih kaki kanannya. Jochi mencoba 
+    menghempaskannya dengan sebuah tendangan, tetapi cengkeraman bocah itu sangat kuat, 
+    dan ia tidak bisa melepaskan kakinya.
 ---
 
-# Bab 3
-
-<div class="w3-row-padding">
-    <div class="w3-col w3-card-4 s12 m4 l4">
-        <img src="https://res.cloudinary.com/drzjshskk/image/upload/e_hue:30/v1676668128/sdyxz/originals/loch-03_pk9ptl.jpg" alt="Gambar Ilustrasi Bab 3" width="100%" />
-    </div>
-    <div class="w3-col s12 m8 l8">
-        <div class="w3-container">
-            <h3>Ilustrasi</h3>
-            <p>
-              Karena marah, Jochi mulai memukul Guo Jing dengan cambuk tunggangannya lagi, menyebabkan Guo Jing berguling-guling kesakitan. Ia berguling di sebelah kaki Jochi sebelum tiba-tiba melompat dan meraih kaki kanannya. Jochi mencoba menghempaskannya dengan sebuah tendangan, tetapi cengkeraman bocah itu sangat kuat, dan ia tidak bisa melepaskan kakinya.
-            </p>
-            <div class="w3-bar w3-border">
-                <a href="/sdyxz" class="w3-bar-item w3-btn w3-hover-black w3-round"><i class="fa fa-home"></i> Daftar Buku</a>
-                <a href="/sdyxz/bab2" class="w3-bar-item w3-btn w3-hover-black w3-round"><i class="fa fa-arrow-left"></i> Bab 2</a>
-                <a href="/sdyxz/bab4" class="w3-bar-item w3-btn w3-hover-black w3-round">Bab 4 <i class="fa fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-
-## Kehidupan Padang Rumput
+## &#128278; Kehidupan Di Padang Rumput
 
 Para biksu menangisi kematian Biksu Jiaomu, tetapi beberapa orang dari mereka 
 masih sempat merawat orang-orang yang terluka dengan membalut luka mereka dan membawa mereka 

@@ -3,17 +3,17 @@ layout: layouts/sdyxz.njk
 title: About Memanah Rajawali
 description: Intro untuk buku Memanah Rajawali
 relatedBooks:
-  - title: Bab 1
+  - title: '&#128214; Bab 1'
     link: /content/memanah-rajawali/bab1.html
-  - title: Bab 2
+  - title: '&#128214; Bab 2'
     link: /content/memanah-rajawali/bab2.html
-  - title: Bab 3
+  - title: '&#128214; Bab 3'
     link: /content/memanah-rajawali/bab3.html
+cover: 
+    image: https://res.cloudinary.com/drzjshskk/image/upload/e_sharpen:120/v1676716319/sdyxz/originals/loch-00_x3cshn.jpg 
+    header: Jin Yong
+    footer: She Diao Ying Xiong Zhuan
 ---
-
-
-![Cover](https://res.cloudinary.com/drzjshskk/image/upload/e_sharpen:120/v1676716319/sdyxz/originals/loch-00_x3cshn.jpg)
-
 
 ## &#128278; What is this?
 
