@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content={{description | safe}}/>
+        <meta name="keywords" content={{keywords | safe}}/>
+        <meta name="author" content={{author | safe}} />
+        <link rel="icon" type="image/svg+xml" href="/book.svg"/>
+        <title>{{title | safe}}</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            a {text-decoration: none; color: blue;}
+        </style>
+    </head>
+    <body>
+        {% include "sidebars/document-sidebar.njk" %}
+        <main class="w3-main" style="margin-left:300px">
+            <header>
+                <button class="w3-button w3-large w3-hide-large" onclick="w3_open()">&#9776;</button>
+                <div class="w3-bar w3-container">
+                    <h1>&#128218; {{title}}</h1>
+                </div>
+                {% if ilustrasi %}
+                <div class="w3-panel w3-card w3-pale-blue w3-round-large" style="width:75%; margin-left:10px;">
+                    <h2>&#10080;</h2>
+                    <i>{{ilustrasi}}</i>
+                    <p></p>
+                </div>
+                {% endif %}
+            </header>
+            <div class="w3-container">
+                {{ content | safe }}
+            </div>
+        </main>
+    </body>
+</html>

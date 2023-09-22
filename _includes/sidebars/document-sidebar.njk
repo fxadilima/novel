@@ -4,10 +4,10 @@
     <div class="w3-bar">
         <a href="/" class="w3-bar-item">&#127968;</a>
         {% if prev %}
-          <a class="w3-bar-item" href="/content/docs/{{prev}}" title="{{prev}}">&#128072;</a>
+          <a class="w3-bar-item" href="/docs/{{prev}}" title="{{prev}}">&#128072;</a>
         {% endif %}
         {% if next %}
-        <a class="w3-bar-item" href="/content/docs/{{next}}" title="{{next}}">&#128073;</a>
+        <a class="w3-bar-item" href="/docs/{{next}}" title="{{next}}">&#128073;</a>
         {% endif %}
     </div>
     
@@ -24,11 +24,14 @@
     {% endif%}
 
     <div class="w3-bar-block">
+        <h3>&#128209; Related Books</h3>
         {% if relatedBooks %}
             {% for book in relatedBooks %}
                 <a href="{{book.link | safe}}" class="w3-btn w3-bar-item">{{book.title | safe}}</a>
             {% endfor %}
         {% endif %}
+        <h4>&#129534; Buku Terlipat</h4>
+        <h5>&#128466; Spiral Notepad</h4>
     </div>
 </div>
 <script>

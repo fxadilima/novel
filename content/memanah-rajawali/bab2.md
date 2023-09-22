@@ -6,7 +6,7 @@ next: bab3
 relatedBooks:
   - title: '&#8505;&#65039; Informasi'
     link: /README.html
-  - title: '&#128214; Menjelajah Dunia'
+  - title: '&#9876; Menjelajah Dunia'
     link: /content/menjelajah-dunia
 cover: 
     image: https://res.cloudinary.com/drzjshskk/image/upload/q_auto:best/v1676666031/sdyxz/originals/ch02_hrww24.jpg 

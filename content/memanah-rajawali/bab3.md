@@ -6,12 +6,12 @@ next: bab4
 relatedBooks:
   - title: '&#8505;&#65039; Informasi'
     link: /README.html
-  - title: Menjelajah Dunia
+  - title: '&#9876; Menjelajah Dunia' # simbol cross-swords
     link: /content/menjelajah-dunia
 cover: 
     image: https://res.cloudinary.com/drzjshskk/image/upload/e_hue:30/v1676668128/sdyxz/originals/loch-03_pk9ptl.jpg 
-    header: Bab 3
-    footer: Kehidupan Di Padang Rumput
+    header: '&#129413'
+    footer: Bab 3
 ilustrasi: 
     Karena marah, Jochi mulai memukul Guo Jing dengan cambuk tunggangannya lagi,
     menyebabkan Guo Jing berguling-guling kesakitan. Ia berguling di sebelah kaki 

@@ -33,14 +33,8 @@ export default ({ title, description, children }) => (
                 </header>
 
                 <div className="w3-container">
-                    <h1>&#9876; {title}</h1>
+                    <h1>&#9775; {title}</h1>
                     {children}
-                </div>
-                <div className="w3-container">
-                    <h1>&#128481; {title}</h1>
-                    <p>
-                        Sebelumnya Menjelajah Dunia memakai simbol ini.
-                    </p>
                 </div>
             </main>
         </body>

@@ -4,11 +4,11 @@ next: bab2
 relatedBooks:
     - title: '&#8505;&#65039; Informasi'
       link: /README.html
-    - title: Kehidupan Di Padang Rumput
+    - title: '&#129413; Kehidupan Di Padang Rumput'
       link: bab3
 ---
 
-## &#128278;  Insiden Ditengah Badai Salju
+## &#128214;  Insiden Ditengah Badai Salju
 
 Di masa itu, di dekat kota Lin'an, sebelah Timur wilayah Jin, dua orang sahabat 
 sedang minum arak sambil menikmati cerita rakyat di sebuah kedai, di pinggiran kota.
