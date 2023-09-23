@@ -1,13 +1,12 @@
-name: Deploy
-on: [push]
+name: Publish on GitHub Pages
+
+on:
+  push:
+    branches: [ lume ]
 
 jobs:
-  deploy:
-    name: Deploy
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write # Needed for auth with Deno Deploy
-      contents: read # Needed to clone the repository
 
     steps:
       - name: Clone repository
@@ -20,9 +19,10 @@ jobs:
 
       - name: Build site
         run: deno task build
-  
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
+
+      - name: Deploy
+        uses: crazy-max/ghaction-github-pages@v3
         with:
-          project: "sdyxz"
-          entrypoint: "./server.ts" 
+          build_dir: _site
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN_PAGE }}
