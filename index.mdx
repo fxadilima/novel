@@ -1,0 +1,168 @@
+---
+layout: default.vto
+title: Lume Tutorial
+description: Halaman depan Just MDX Tutorials
+---
+
+# &#x1f5fb; Menulis Dokumen Web Dengan Lume
+
+Sebenarnya kita bisa saja menulis semua dokumen dalam situs kita secara langsung, tanpa menggunakan _framework_ apa pun, tetapi hal ini 
+akan membuatnya sulit dirawat, dan jika kita ingin mengubah sesuatu yang berkaitan dengan _layout_, maka bisa sangat menjengkelkan, karena 
+perubahan itu bisa jadi punya efek sangat luas, mempengaruhi hampir semua bagian dari situs kita. Inilah sebabnya kita membutuhkan seperangkat 
+program yang dinamakan _framework_.
+
+Cek isi direktori <a href="docs" class="w3-button w3-hover-black w3-round w3-border">&#x1f4c1; Dokumentasi</a>
+
+
+## &#x1f4a0; Layout Dokumen
+
+Siapkan sebuah direktori kosong, lalu buka sebuah terminal di dalam direktori tersebut, dan ketik perintah berikut (Anda membutuhkan koneksi internet):
+
+```bash
+
+$ deno run -A https://lume.land/init.ts
+
+```
+
+Anda akan harus menjawab beberapa pilihan, untuk tahap ini _pilih semua default_ dengan cara menekan tombol `ENTER`.
+Sebagai hasilnya, ada 3 file baru hadir di dalam direktori Anda:
+
++ _cms.ts
++ _config.ts
++ deno.json
+
+Nantinya, semua file yang kita jadikan bahan untuk membuat situs akan ada di dalam sebuah direktori yang dijadikan _source_, dan hasilnya akan 
+disimpan di dalam direktori _destination_, yang secara _default_ akan bernama `_site`. Jika kita tidak membuat konfigurasi apa pun juga, maka 
+direktori _root_ proyek Anda itu akan dijadikan direktori _source_.
+
+Misalnya, buat sebuah dokumen bernama `index.md` di dalam direktori tersebut, dengan isi sederhana sbb:
+
+```markdown
+# Halaman Depan
+
+Tulisan ini akan ditampilkan di _halaman depan_ situs kita...
+```
+
+Lalu jalankan perintah berikut:
+
+```bash
+$ deno task lume -s
+```
+
+Buka browser di alamat `localhost:3000`, dan Anda akan melihat isi dokumen itu. Tetapi apa yang ditampilkan itu teramat _basic_, dan kita tentu saja 
+ingin menampilkannya sesuai dengan selera kita sendiri. Ini karena isi dokumen itu tidak memiliki `<head>` yang bisa berisi _stylesheet_ dan semua 
+informasi lain yang diperlukan untuk sebuah halaman web lengkap.
+
+Untuk memperbaikinya, buat sebuah direktori bernama `_includes`, lalu di dalamnya buat sebuah dokumen bernama `default.vto` dengan isi sbb:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Depan</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <main class="w3-main w3-container" id="main">
+      <div class="w3-content">
+        {{ content }}
+      </div>
+    </main>
+  </body>
+</html>
+```
+
+Halaman yang tampil di _browser_ Anda akan otomatis berubah setiap kali dokumen yang baru kita ubah disimpan kembali, tetapi kali ini masih belum berubah,
+karena dokumen `index.md` itu belum memakai _layout_ yang baru kita tulis. Untuk memakainya tambahkan 3 baris berikut di bagian paling atas dokumen tersebut:
+
+```markdown
+---
+layout: default.vto
+---
+```
+
+Setelah Anda menyimpan perubahan tersebut, maka tampilan di _browser_ juga akan berubah.
+
+
+### &#x2756; Membuat Variabel
+
+Dokumen _layout_ kita, `default.vto`, secara default memiliki sebuah variabel bernama `content`, yang mewakili isi dari dokumen _markdown_ yang 
+kita tulis, dan memakai _layout_ tersebut. Akan tetapi jika kita ingin memakai _layout_ yang sama untuk beberapa dokumen lain, maka setidaknya kita 
+pasti ingin mengubah _title_ dari dokumen tersebut. Untuk ini kita harus memiliki variabel khusus yang bisa diakses dari dalam `default.vto`, 
+misalnya, yang bernama `title`.
+
+Sebagai contoh, buat variabel ini di dalam file `index.md` Anda, sehingga bagian atasnya menjadi sbb:
+
+```markdown
+---
+layout: default.vto
+title: Situs Koplak
+---
+```
+
+Lalu ubah bagian tag `<title>` di dalam `default.vto` Anda menjadi sbb:
+
+```html
+<title>{{ title }}</title>
+```
+
+Sekarang yang ditampilkan oleh browser Anda juga akan berubah.
+
+
+## Syntax Highlighting
+
+Bermain-main dengan _syntax highlighting_ bisa jadi sangat makan waktu, karena tak satu pun _theme_ yang tersedia dan siap pakai itu sungguh-sungguh 
+memenuhi selera kita. 
+
+```typescript
+import { HandlerContext, PageProps } from "$fresh/server.ts";
+import hljs from "hljs";
+import MarkdownIt from 'markdown-it';
+import MarkdownItFootnote from 'markdown-it-footnote';
+import {h, Component, createElement} from 'preact';
+import renderToSring from 'preact-render-to-string';
+import { extract } from "$std/front_matter/yaml.ts";
+
+interface Page {
+  markdown: string;
+  data: Record<string, unknown>;
+  attrs: object;
+}
+
+export const handler: Handlers<Page> = {
+  async GET(_req: Request, ctx: HandlerContext) {
+    //console.log(`Slug: context = ${JSON.stringify(ctx)}`);
+    //console.log(`ctx.params = ${JSON.stringify(ctx.params)}`);
+    //console.log(`Slug: ${ctx.params.slug}`);
+    const realPath = Deno.cwd() + "/contents/yttlj/1340/" + ctx.params.slug;
+    //console.log(`realPath = ${realPath}`);
+    try {
+      const txt = await Deno.readTextFile(realPath);
+      const { attrs, body } = extract(txt);
+      console.log(`Handler: attr => ${attrs}`);
+      const retval = getHTMLString(body);
+      //ctx.state = attrs;
+      return ctx.render({markdown: retval, attrs: attrs});
+    }
+    catch (err) {
+      console.log(`Slug handler for preludes: ${err}`);
+      return ctx.renderNotFound();
+    }
+  }
+};
+
+export default async function Home() {
+  const realPath = Deno.cwd() + "/contents/yttlj/README.md";
+  const txt = await Deno.readTextFile(realPath);
+  const md = new MarkdownIt({html: true}).use(MarkdownItFootnote);
+  const html = md.render(txt);
+  return (
+    <div class="w3-content" dangerouslySetInnerHTML={{__html: html}} />
+  );
+}
+```
+
+
+

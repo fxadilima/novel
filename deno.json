@@ -1,0 +1,30 @@
+{
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.4.3/",
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@v0.8.0/",
+    "rehype-highlight": "https://esm.sh/rehype-highlight@7.0.1",
+    "remark-gfm": "https://esm.sh/remark-gfm@4.0.0",
+    "markdown-it-footnote": "https://esm.sh/markdown-it-footnote",
+    "markdown-it-collapsible": "npm:markdown-it-expandable",
+    "highlightjs": "npm:highlight.js",
+    "preact": "https://esm.sh/preact@10.22.0",
+    "preact/": "https://esm.sh/preact@10.22.0/",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
+    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.5.11"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "cms": "deno task lume cms"
+  },
+  "compilerOptions": {
+    "types": [
+      "lume/types.ts"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact"
+  }
+}
+
