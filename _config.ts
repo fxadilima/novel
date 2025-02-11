@@ -24,16 +24,11 @@ site.use(highlight({
     {
       name: 'atom-one-dark',
       path: '/assets/styles/code_theme.css'
-    },
-    {
-      name: 'base16-railscasts',
-      path: '/assets/styles/railscasts.min.css'
     }
   ]
 }));
 
 site.use(mdx({
-  jsxImportSource: 'preact',
   rehypePlugins: [rehypeHighlight],
   remarkPlugins: [remarkGfm]
 }));
